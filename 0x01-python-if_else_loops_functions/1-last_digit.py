@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-neoNumber = abs(number) % 10
-print("Last digit of {:d} is {:d}".format(number, neoNumber), end=" ")
-if neoNumber > 5:
-    print("and is greater than 5")
-elif neoNumber == 0:
-    print("and is 0")
+digit = abs(number) % 10
+print("Last digit of", end=" ")
+if digit > 5:
+    print("{:d} is {:d} and is greater than 5".format(number, digit))
+elif digit == 0:
+    print("{:d} is {:d} and is 0".format(number, digit))
 else:
-    print("and is less than 6 and not 0")
+    print("{:d} is {:d} and is less than 6 and not 0".format(number, digit))

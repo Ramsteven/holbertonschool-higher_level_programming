@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-from add import add, sub, mul, div
+from calculator_1 import add, sub, mul, div
 
-if _name__ == "__main__":
+if __name__ == "__main__":
     import sys
 
 a = 10

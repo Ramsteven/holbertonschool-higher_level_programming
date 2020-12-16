@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    if not isinstance(sentence, str):
+    if not sentence:
         return None
     else:
         tuple_new = (len(sentence), sentence[0])

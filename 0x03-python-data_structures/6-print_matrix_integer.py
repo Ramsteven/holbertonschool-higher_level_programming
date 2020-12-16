@@ -4,4 +4,5 @@ def print_matrix_integer(matrix=[[]]):
         space = ""
         for number in x:
             print("{:s}{:d}".format(space, number), end="")
+            space = " "
         print()

@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 def complex_delete(dic, value):
-    if not value:
-        return dic
     values = list(dic.values())
     keys = list(dic.keys())
     for i in values:

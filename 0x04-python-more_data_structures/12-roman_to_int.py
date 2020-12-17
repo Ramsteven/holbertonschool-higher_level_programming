@@ -12,9 +12,5 @@ def roman_to_int(roman_string):
             return result
         if dic[roman_string[i]] >= dic[roman_string[i + 1]]:
             result += dic[roman_string[i]]
-        elif dic[roman_string[i]] < dic[roman_string[i + 1]]:
-            result += dic[roman_string[i + 1]] - dic[roman_string[i]]
-            if (i + 2 <= len(roman_string)):
-                    i += 2
-            else:
-                return result
+        else:
+            result -= dic[roman_string[i]]

@@ -7,5 +7,5 @@ def best_score(a_dictionary):
     val_list = list(a_dictionary.values())
     for y in val_list:
         if y > score:
-            score = 0
+            score = y
     return key_list[score]

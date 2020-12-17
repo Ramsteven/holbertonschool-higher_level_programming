@@ -8,4 +8,5 @@ def best_score(a_dictionary):
     for y in val_list:
         if y > score:
             score = y
-    return key_list[score]
+    position = val_list.index(score)
+    return key_list[position]

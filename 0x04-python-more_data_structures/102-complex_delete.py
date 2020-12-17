@@ -4,8 +4,6 @@ def complex_delete(dic, value):
         return dic
     values = list(dic.values())
     keys = list(dic.keys())
-    if value not in values:
-        return dic
     for i in values:
         if i == value:
             position = values.index(value)

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def complex_delete(dic, value):
-    for x, y in dic.items():
+    dictio = dic.copy()
+    for x, y in dictio.items():
         if y == value:
-            dic.pop(value, None)
+            del dic[x]
     return dic

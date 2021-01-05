@@ -54,4 +54,5 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif value[0] < 0 or value[1] < 0:
             raise ValueError("size must be >= 0")
-        self.__position = (value[0], value[1])
+        else:
+            self.__position = (value[0], value[1])

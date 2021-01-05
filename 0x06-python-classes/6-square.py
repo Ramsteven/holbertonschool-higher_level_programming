@@ -55,4 +55,4 @@ class Square:
            len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-            self.__position = (value[0], value[1])
+            self.__position = value

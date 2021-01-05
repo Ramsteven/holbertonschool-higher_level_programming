@@ -12,7 +12,7 @@ class Square:
         elif size < 0 or position[0] < 0 or position[1] < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-        self.__position = (position[0], position[1])
+        self.__position = position
     '''get value area'''
     def area(self):
         return self.__size**2

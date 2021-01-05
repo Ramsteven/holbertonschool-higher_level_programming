@@ -31,12 +31,15 @@ class Square:
             self.__size = value
     ''' print ouput of the square '''
     def my_print(self):
-        for y in range(0, self.__size):
-            for x in range(0, self.position[0]):
-                print(" ", end="")
-            for x in range(0, self.__size):
-                print("#", end="")
+        if self.size == 0:
             print()
+        else:
+            for y in range(0, self.__size):
+                for x in range(0, self.position[0]):
+                    print(" ", end="")
+                for x in range(0, self.__size):
+                    print("#", end="")
+                print()
     '''position getter'''
     @property
     def position(self):

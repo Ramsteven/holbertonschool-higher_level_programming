@@ -33,12 +33,12 @@ class Square:
         else:
             for x in range(self.__position[1]):
                 print()
-            for y in range(self.__size):
-                for z in range(self.__position[0]):
-                    print(" ", end="")
-                for z in range(self.__size):
-                    print("#", end="")
-                print()
+        for y in range(self.__size):
+            for z in range(self.__position[0]):
+                print(" ", end="")
+            for z in range(self.__size):
+                print("#", end="")
+            print()
 
     '''position getter'''
     @property

@@ -5,8 +5,8 @@
 class Square:
     '''init square and raising errors'''
     def __init__(self, size=0, position=(0, 0)):
-        self.size = size
-        self.position = position
+        self.__size = size
+        self.__position = position
 
     '''get value area'''
     def area(self):

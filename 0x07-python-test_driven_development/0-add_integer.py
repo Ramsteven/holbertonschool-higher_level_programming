@@ -8,7 +8,7 @@ This is the module for
 
 def add_integer(a, b=98):
     """
-        add_integer' that add two number
+        add_integer that add two number
     """
     handle_a = isinstance(a, (int, float))
     handle_b = isinstance(b, (int, float))

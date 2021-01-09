@@ -22,3 +22,9 @@ say_my_name with integers:
 	Traceback (most recent call last):
     	...
 	TypeError: last_name must be a string
+
+	>>> say_my_name("walter")
+	My name is walter 
+
+	>>> say_my_name("","waler")
+	My name is  waler

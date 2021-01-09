@@ -90,4 +90,14 @@ adding edge cases:
 	...
 	ValueError: cannot convert float NaN to integer
 
+adding only None:
+	>>> add_integer(None)	
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+	>>> add_integer(None,3)	
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
 

@@ -1,0 +1,31 @@
+"""
+
+	testing  5-text_indentation
+
+"""
+Using ``text_indentation``
+___________________________________
+
+	>>> __import__('5-text_indentation').__doc__ != None
+	True
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+	>>> text_indentation.__doc__ != None
+    	True
+
+text_indentation with integers:
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+    	...
+	TypeError: text must be a string
+
+	>>> text_indentation(12312)
+	Traceback (most recent call last):
+    	...
+	TypeError: text must be a string
+
+	T>>> text_indentatation(["1","2","3"])
+	Traceback (most recent call last):
+    	...
+	TypeError: text must be a string

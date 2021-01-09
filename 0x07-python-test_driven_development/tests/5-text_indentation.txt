@@ -14,6 +14,16 @@ ___________________________________
 	>>> text_indentation.__doc__ != None
     	True
 
+	>>> text_indentation("hola")
+	hola
+
+	>>> text_indentation("hola:")
+	hola:
+	<BLANKLINE>
+
+	>>> text_indentation("hola")
+	hola
+
 text_indentation with integers:
 	>>> text_indentation(None)
 	Traceback (most recent call last):
@@ -25,7 +35,7 @@ text_indentation with integers:
     	...
 	TypeError: text must be a string
 
-	T>>> text_indentatation(["1","2","3"])
+	>>> text_indentation(["s","43","34"])
 	Traceback (most recent call last):
     	...
 	TypeError: text must be a string

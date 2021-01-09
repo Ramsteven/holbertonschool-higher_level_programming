@@ -16,8 +16,7 @@ def text_indentation(text):
     while c < len(text):
         if text[c] == '.' or text[c] == '?' or text[c] == ':':
             final = final + text[c] + "\n\n"
-            if text[c + 1] == " ":
-                c += 2
+            c += 2
         else:
             final = final + text[c]
             c += 1

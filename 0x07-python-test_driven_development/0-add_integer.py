@@ -15,4 +15,4 @@ def add_integer(a, b=98):
         raise TypeError("{} must be an integer"
                         .format("a" if handle_a is False else "b"))
     else:
-        return int(a) + int(b)
+        return int(a + b)

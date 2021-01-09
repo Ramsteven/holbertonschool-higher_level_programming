@@ -54,6 +54,12 @@ adding edge cases:
     	...
     	TypeError: add_integer() missing 1 required positional argument: 'a'
 
+ adding empty:
+	>>> add_integer(2,)
+    	Traceback (most recent call last):
+    	...
+    	TypeError: add_integer() missing 1 required positional argument: 'a'
+
  adding with None:
 	>>> add_integer(3, None)
     	Traceback (most recent call last):
@@ -82,3 +88,11 @@ adding edge cases:
     	Traceback (most recent call last):
 	...
 	TypeError: a must be an integer
+
+ adding NaN:
+ 	>>> add_integer(float('nan'), 5)
+    	Traceback (most recent call last):
+	...
+	ValueError: cannot convert float NaN to integer""
+
+

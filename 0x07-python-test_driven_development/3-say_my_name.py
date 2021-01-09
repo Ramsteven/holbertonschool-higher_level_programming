@@ -14,5 +14,5 @@ def say_my_name(first_name, last_name=""):
     last = isinstance(last_name, str)
     if first is False or last is False:
         raise TypeError("{} must be a string".format
-                        ("firts_name"if first is False else "last_name"))
+                        ("first_name"if first is False else "last_name"))
     print("My name is {} {}".format(first_name, last_name))

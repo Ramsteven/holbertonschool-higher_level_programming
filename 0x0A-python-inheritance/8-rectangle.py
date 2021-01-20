@@ -2,9 +2,10 @@
 ''' rectangle geometry'''
 BaseGeometry = __import__("8-rectangle.py").BaseGeometry
 
+
 class Rectangle(BaseGeometry):
     '''
-        Clas rectangle
+        Class rectangle
     '''
     def __init__(self, width, height):
         ''' constructor '''

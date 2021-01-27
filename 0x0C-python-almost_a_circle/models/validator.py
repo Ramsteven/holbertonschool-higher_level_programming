@@ -5,6 +5,7 @@
 class Validator():
     """ class check if the number received is correct"""
     def compare(self, width, height, x, y):
+        """ method compare the number received"""
         attr = [width, height, x, y]
         key = ["width", "height", "x", "y"]
 

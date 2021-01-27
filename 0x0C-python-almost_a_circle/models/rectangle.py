@@ -29,6 +29,7 @@ class Rectangle(Base, Validator):
     @width.setter
     def width(self, x):
         """acessor method"""
+        super().width_height(x, "width")
         self.__width = x
 
     @property

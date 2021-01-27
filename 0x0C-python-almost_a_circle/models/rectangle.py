@@ -5,7 +5,6 @@
 from models.base import Base
 from models.validator import Validator
 
-
 class Rectangle(Base, Validator):
     """ Class Rectangle """
     def __init__(self, width, height, x=0, y=0, id=None):

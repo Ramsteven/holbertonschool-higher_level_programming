@@ -1,0 +1,17 @@
+-- Querry that create a table
+-- Querry add many values to this tables
+CREATE TABLE IF NOT EXISTS secon_table(
+  id INT,
+  name (256),
+  score INT
+);
+
+
+INSERT INTO second_table (id, name, score) VALUES(
+  (1, "John", 10)
+  (2, "Alex", 3)
+  (3, "Bob", 14)
+  (4, "George", 8)
+
+);
+

@@ -1,6 +1,6 @@
 -- Querry that create a table
 -- Querry add many values to this tables
-CREATE TABLE IF NOT EXISTS secon_table(
+CREATE TABLE IF NOT EXISTS second_table(
   id INT,
   name (256),
   score INT

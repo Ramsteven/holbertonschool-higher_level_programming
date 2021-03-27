@@ -19,5 +19,5 @@ if len(argv) is 4:
     rows = c.fetchall()
     for eachRow in rows:
         print(eachRow)
-    c.close()
-    conn.close() 
+    cursor.close()
+    db.close()

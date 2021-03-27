@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module
+Module of firts task
 """
 import MySQLdb
 from sys import argv

@@ -16,8 +16,8 @@ if len(argv) is 4:
     cursor = db.cursor()
 
     cursor.execute("SELECT * FROM states ORDER BY id ASC;")
-    rows = c.fetchall()
-    for eachRow in rows:
-        print(eachRow)
+    rows = cursor.fetchall()
+    for Row in rows:
+        print(Row)
     cursor.close()
     db.close()

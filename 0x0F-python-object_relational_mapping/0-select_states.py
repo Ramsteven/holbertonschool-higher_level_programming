@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
         cursor = db.cursor()
 
-        cursor.execute("SELECT id, name FROM states ORDER BY id;")
+        cursor.execute("SELECT * FROM states ORDER BY id;")
         for id_query in cursor:
             print("{}".format(id_query))
         cursor.close()

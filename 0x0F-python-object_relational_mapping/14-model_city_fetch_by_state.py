@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     for city in data:
         print("{}: ({}) {}".format(
-            item.State.name,
-            item.City.id,
-            item.City.name
+            city.State.name,
+            city.City.id,
+            city.City.name
         ))

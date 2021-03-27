@@ -22,7 +22,7 @@ if __name__ == "__main__":
     Session = sessionmaker()
     Session.bind = engine
     current_session = Session()
-    data = current_session.query(State).firts()
+    data = current_session.query(State).first()
     if data:
         print("{}: {}").format(data.id, data.name)
     else:

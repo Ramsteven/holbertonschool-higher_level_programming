@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# script that lists all states from the database
+"""
+modulete get all
+"""
 import MySQLdb
 from sys import argv
 

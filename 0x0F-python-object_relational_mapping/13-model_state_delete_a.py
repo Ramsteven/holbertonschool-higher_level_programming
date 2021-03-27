@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Start link class to table in database 
+"""
+Start link class to table in database
 """
 from sys import argv
 from model_state import Base, State
@@ -20,11 +21,11 @@ if __name__ == "__main__":
     Base.metadata.bind = engine
     Session = sessionmaker()
     Session.bind = engine
-    current_session = Session() 
+    current_session = Session()
     data = current_session.query(State).filter(State.name.like('%a%')).all()
     if data:
         for x in data:
-            current_session.delete(x)    
+            current_session.delete(x)
         current_session.commit()
     else:
         pass

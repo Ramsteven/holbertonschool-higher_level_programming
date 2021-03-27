@@ -19,9 +19,8 @@ if __name__ == '__main__':
         query = "SELECT id, name FROM states \
         WHERE name LIKE BINARY '{}' ORDER BY id ASC;".format(argv[4])
         cursor.execute(query)
-        #rows = cursor.fetchall()
         for result in cursor:
             print(result)
-        cursor.close() 
+        cursor.close()
     except Exception:
         pass

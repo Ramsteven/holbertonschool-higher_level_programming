@@ -22,7 +22,7 @@ if __name__ == '__main__':
         rows = cursor.fetchall()
         for row in cursor:
             print(row)
-        cursor.close() 
+        cursor.close()
     except Exception as err:
         print(err)
         pass

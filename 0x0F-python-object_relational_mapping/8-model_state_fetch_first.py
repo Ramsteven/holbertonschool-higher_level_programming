@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Start link class to table in database 
+"""
+Start link class to table in database
 """
 import sys
 from model_state import Base, State
@@ -23,6 +24,6 @@ if __name__ == "__main__":
     current_session = Session()
     data = current_session.query(State).firts()
     if data:
-        print("{}: {}").format(data.id, data.name))
-    else
+        print("{}: {}").format(data.id, data.name)
+    else:
         print("Nothing")

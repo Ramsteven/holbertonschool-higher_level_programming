@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Start link class to table in database 
+"""
+    Start link class to table in database
 """
 from sys import argv
 from model_state import Base, State
@@ -21,12 +22,13 @@ if __name__ == "__main__":
     Base.metadata.bind = engine
     Session = sessionmaker()
     Session.bind = engine
-    current_session = Session() 
-    data = current_session.query(State, City).filter(State.id == City.state_id).all()
+    current_session = Session()
+    data = current_session.query(State,
+                                 City).filter(State.id == City.state_id).all()
 
     for city in data:
         print("{}: ({}) {}".format(
             item.State.name,
             item.City.id,
             item.City.name
-        ))    
+        ))

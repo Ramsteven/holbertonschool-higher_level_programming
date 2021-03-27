@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start link class to table in database 
+"""Start link class to table in database
 """
 import sys
 from model_state import Base, State
@@ -22,4 +22,4 @@ if __name__ == "__main__":
     Session.bind = engine
     current_session = Session()
     for data in current_session.query(State).all():
-        print("{}: {}".format(data.id, data.name)) 
+        print("{}: {}".format(data.id, data.name))

@@ -24,6 +24,6 @@ if __name__ == "__main__":
     current_session = Session()
     data = current_session.query(State).first()
     if data:
-        print("{}: {}").format(data.id, data.name)
+        print("{}: {}".format(data.id, data.name))
     else:
         print("Nothing")

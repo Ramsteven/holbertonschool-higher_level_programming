@@ -16,3 +16,5 @@ if len(argv) is 4:
     cursor.execute("SELECT id, name FROM states ORDER BY id;")
     for id_query in cursor:
         print("{}".format(id_query))
+    cursor.close()
+    db.close()

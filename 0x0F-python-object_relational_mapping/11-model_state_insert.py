@@ -21,7 +21,7 @@ if __name__ == "__main__":
     Session = sessionmaker()
     Session.bind = engine
     current_session = Session()
-    current_session.add(State(name='Lousiana'))
+    current_session.add(State(name='Louisiana'))
     current_session.commit()
     data = current_session.query(State).order_by(State.id.desc()).first()
     if data:

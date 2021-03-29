@@ -1,23 +1,18 @@
 #!/usr/bin/python3
 """
-Module of firts task
+Module Select states
 """
+import sys
 import MySQLdb
-from sys import argv
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(
-        host='localhost',
-        user=argv[1],
-        passwd=argv[2],
-        db=argv[3],
-        port=3306)
+    conn = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
+                           passwd=sys.argv[2], db=sys.argv[3], charset="utf8")
+    cur = conn.cursor()
 
-    cursor = db.cursor()
-
-    cursor.execute("SELECT * FROM states ORDER BY id;")
-    rows = cursor.fetchall()
-    for id_query in rows:
-        print(id_query)
-    cursor.close()
-    db.close()
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    query_rows = cur.fetchall()
+    for row in query_rows:
+        print(row)
+    cur.close()
+    conn.close()

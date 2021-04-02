@@ -8,13 +8,13 @@ from sqlalchemy.orm import Session
 
 
 if __name__ == "__main__":
-    user = argv[1]
-    pwd = argv[2]
-    db = argv[3]
+    username = argv[1]
+    password = argv[2]
+    database = argv[3]
 
     engine = create_engine(
         'mysql+mysqldb://{}:{}@localhost/{}'
-        .format(user, pwd, db), pool_pre_ping=True)
+        .format(username, password, database), pool_pre_ping=True)
 
     Base.metadata.create_all(engine)
 
@@ -25,4 +25,3 @@ if __name__ == "__main__":
 
     session.add(new_state)
     session.commit()
-    session.close()

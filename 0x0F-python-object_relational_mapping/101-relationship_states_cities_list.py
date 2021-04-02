@@ -17,7 +17,6 @@ if __name__ == "__main__":
         .format(user, pwd, db), pool_pre_ping=True)
 
     Base.metadata.create_all(engine)
-    
     session = Session(engine)
 
     states = session.query(State).order_by(State.id).all()

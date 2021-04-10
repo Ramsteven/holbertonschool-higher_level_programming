@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Send a request to the URL
+""" this a function that print x-request-id gives a response """
 
 
 from sys import argv
